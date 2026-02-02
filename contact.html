@@ -3,230 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Quick Haul Junk Removal for a free quote. Call (555) JUNK-NOW or fill out our online form for fast service.">
-    <title>Contact Us | Quick Haul Junk Removal</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Contact Us | ClearPath Junk Removal</title>
+    <meta name="description" content="Contact ClearPath for a free junk removal quote. Call (555) JUNK-HAUL or submit a request online. Same-day service available.">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <!-- Header Navigation -->
+    <header class="site-header">
         <div class="container">
-            <div class="nav-wrapper">
+            <div class="header-content">
                 <div class="logo">
                     <span class="logo-icon">🚛</span>
-                    <span class="logo-text">Quick Haul</span>
+                    <span class="logo-text">ClearPath</span>
                 </div>
-                <button class="mobile-toggle" aria-label="Toggle menu">
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:555-JUNK-HAUL" class="header-cta">Call Now</a>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                    <li><a href="tel:555-JUNK-NOW" class="nav-cta">Call: (555) JUNK-NOW</a></li>
-                </ul>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
+    <!-- Page Hero -->
+    <section class="page-hero">
         <div class="container">
-            <h1>Get Your Free Quote</h1>
-            <p>Same-day and next-day service available</p>
+            <h1 class="page-title">Get Your Free Quote</h1>
+            <p class="page-subtitle">Fast response guaranteed. Most quotes provided within 1 hour.</p>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section class="contact-section">
         <div class="container">
-            <div class="contact-grid">
+            <div class="contact-layout">
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Call or Text</h3>
+                        <p class="contact-detail">(555) JUNK-HAUL</p>
+                        <p class="contact-detail">(555) 586-5428</p>
+                        <p class="contact-note">Available 7 days a week</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email Us</h3>
+                        <p class="contact-detail">info@clearpathhaul.com</p>
+                        <p class="contact-note">We respond within 1 hour during business hours</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Visit Our Office</h3>
+                        <p class="contact-detail">123 Hauler Lane<br>Your City, ST 12345</p>
+                        <p class="contact-note">Monday - Friday: 7am - 7pm</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">🗺️</div>
+                        <h3>Service Areas</h3>
+                        <p class="contact-detail">We proudly serve:</p>
+                        <ul class="service-areas-list">
+                            <li>Downtown & Metro Area</li>
+                            <li>North County Communities</li>
+                            <li>South County Communities</li>
+                            <li>East Valley Region</li>
+                            <li>West Valley Region</li>
+                        </ul>
+                        <p class="contact-note">Not sure if we serve your area? Call us to find out!</p>
+                    </div>
+                </div>
+
                 <!-- Contact Form -->
                 <div class="contact-form-wrapper">
-                    <h2>Request a Free Quote</h2>
-                    <p class="form-intro">Fill out the form below and we'll get back to you within 1 hour during business hours. Or call us now for immediate assistance!</p>
-                    
-                    <form action="https://formspree.io/f/xqelgewb" method="POST" class="contact-form" id="quoteForm">
+                    <div class="form-header">
+                        <h2>Request a Free Quote</h2>
+                        <p>Fill out the form below and we'll get back to you with a detailed estimate. Most quotes provided within 1 hour.</p>
+                    </div>
+
+                    <form id="contactForm" action="https://formspree.io/f/xqelgewb" method="POST" class="contact-form">
                         <div class="form-group">
-                            <label for="name">Your Name *</label>
+                            <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" required placeholder="John Smith">
                         </div>
 
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="phone">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required placeholder="john@example.com">
-                            </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
                         </div>
 
                         <div class="form-group">
-                            <label for="junk-type">Type of Junk *</label>
-                            <select id="junk-type" name="junk-type" required>
-                                <option value="">Select one...</option>
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address">Service Address *</label>
+                            <input type="text" id="address" name="address" required placeholder="123 Main St, Your City, ST 12345">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" class="form-select">
+                                <option value="">Select a service</option>
                                 <option value="residential">Residential Junk Removal</option>
-                                <option value="commercial">Commercial Junk Removal</option>
-                                <option value="appliances">Appliances</option>
-                                <option value="furniture">Furniture</option>
+                                <option value="furniture">Furniture & Mattress Removal</option>
+                                <option value="appliances">Appliance Removal</option>
                                 <option value="construction">Construction Debris</option>
-                                <option value="yard-waste">Yard Waste</option>
-                                <option value="other">Other / Multiple Items</option>
+                                <option value="yard">Yard Waste</option>
+                                <option value="estate">Estate Cleanout</option>
+                                <option value="commercial">Commercial Junk Removal</option>
+                                <option value="other">Other</option>
                             </select>
                         </div>
 
                         <div class="form-group">
-                            <label for="message">Tell us about your junk *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Please describe what needs to be removed, approximate quantity, and any other relevant details (e.g., 'One sofa, two mattresses, and misc garage items')"></textarea>
+                            <label for="description">What needs to be removed? *</label>
+                            <textarea id="description" name="description" rows="5" required placeholder="Please describe the items you need removed. Include quantities and approximate sizes if possible."></textarea>
+                            <small class="form-hint">The more details you provide, the more accurate your quote will be.</small>
                         </div>
 
                         <div class="form-group">
-                            <label for="address">Service Address</label>
-                            <input type="text" id="address" name="address" placeholder="123 Main Street, City, State">
+                            <label for="preferred-date">Preferred Date</label>
+                            <input type="date" id="preferred-date" name="preferred-date" class="form-input">
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-large btn-full">
-                            Get My Free Quote
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="same-day" name="same-day">
+                                <span>I need same-day service (if available)</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large btn-submit">
+                            <span class="btn-text">Get Free Quote</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
                         </button>
 
-                        <p class="form-note">* Required fields. We respect your privacy and will never share your information.</p>
+                        <div class="form-success" style="display: none;">
+                            <div class="success-icon">✓</div>
+                            <h3>Thank you for your request!</h3>
+                            <p>We've received your information and will contact you shortly with a free quote. Most quotes are provided within 1 hour during business hours.</p>
+                        </div>
+
+                        <div class="form-error" style="display: none;">
+                            <div class="error-icon">⚠️</div>
+                            <h3>Oops! Something went wrong.</h3>
+                            <p>Please try again or call us directly at (555) JUNK-HAUL.</p>
+                        </div>
                     </form>
-
-                    <div id="formSuccess" class="form-success" style="display: none;">
-                        <h3>✓ Thank You!</h3>
-                        <p>We've received your request and will contact you within 1 hour during business hours.</p>
-                    </div>
                 </div>
 
-                <!-- Contact Info Sidebar -->
-                <div class="contact-info-sidebar">
-                    <div class="contact-card">
-                        <h3>Call or Text Us Now</h3>
-                        <a href="tel:555-586-5669" class="phone-number">(555) JUNK-NOW</a>
-                        <p class="availability">Available Mon-Sat, 7AM-7PM</p>
-                    </div>
-
-                    <div class="contact-card">
-                        <h3>Business Hours</h3>
-                        <ul class="hours-list">
-                            <li>
-                                <span class="day">Monday - Friday</span>
-                                <span class="time">7:00 AM - 7:00 PM</span>
-                            </li>
-                            <li>
-                                <span class="day">Saturday</span>
-                                <span class="time">7:00 AM - 7:00 PM</span>
-                            </li>
-                            <li>
-                                <span class="day">Sunday</span>
-                                <span class="time">Closed</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="contact-card">
-                        <h3>Service Area</h3>
-                        <p>We proudly serve:</p>
-                        <ul class="service-area-list">
-                            <li>Your City</li>
-                            <li>Neighboring Town</li>
-                            <li>Another Town</li>
-                            <li>Nearby City</li>
-                            <li>And surrounding areas</li>
-                        </ul>
-                        <p class="area-note">Not sure if we service your area? Give us a call!</p>
-                    </div>
-
-                    <div class="contact-card">
-                        <h3>Email Us</h3>
-                        <a href="mailto:hello@quickhaul.com" class="email-link">hello@quickhaul.com</a>
-                        <p class="response-time">We typically respond within 2-4 hours</p>
-                    </div>
-
-                    <div class="contact-card highlight">
-                        <h3>Same-Day Service Available!</h3>
-                        <p>Need junk removed today? Call us before 2 PM and we'll do our best to accommodate same-day pickup.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="contact-faq">
+    <!-- Hours Section -->
+    <section class="hours-section">
         <div class="container">
-            <h2>Common Questions</h2>
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>How quickly can you come?</h3>
-                    <p>We offer same-day service if you call before 2 PM (subject to availability). Otherwise, we typically schedule next-day or within 48 hours.</p>
+            <div class="hours-content">
+                <h2 class="section-title">Business Hours</h2>
+                <div class="hours-grid">
+                    <div class="hours-day">
+                        <span class="day">Monday - Friday</span>
+                        <span class="time">7:00 AM - 7:00 PM</span>
+                    </div>
+                    <div class="hours-day">
+                        <span class="day">Saturday</span>
+                        <span class="time">8:00 AM - 6:00 PM</span>
+                    </div>
+                    <div class="hours-day">
+                        <span class="day">Sunday</span>
+                        <span class="time">9:00 AM - 5:00 PM</span>
+                    </div>
                 </div>
-                <div class="faq-item">
-                    <h3>Do you charge for estimates?</h3>
-                    <p>No! All estimates are completely free with no obligation. We can often provide a phone estimate, or we can come to your location.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>How do you determine pricing?</h3>
-                    <p>We charge based on how much space your items take up in our truck. We'll show you the price before we load anything — no hidden fees.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Do I need to be present?</h3>
-                    <p>We prefer that you're there to show us what needs to go and approve the price, but if needed, we can work with you to arrange service when you're not available.</p>
-                </div>
+                <p class="hours-note">Emergency and after-hours services available by appointment. Call to inquire.</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="site-footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
+            <div class="footer-content">
+                <div class="footer-column">
                     <div class="footer-logo">
                         <span class="logo-icon">🚛</span>
-                        <span class="logo-text">Quick Haul</span>
+                        <span class="logo-text">ClearPath</span>
                     </div>
-                    <p>Your trusted local junk removal experts. Fast, affordable, and eco-friendly service.</p>
+                    <p class="footer-tagline">Making junk removal simple, fast, and affordable since 2015.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                    </div>
                 </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Business Hours</h4>
+                    <ul class="footer-list">
+                        <li>Monday - Friday: 7am - 7pm</li>
+                        <li>Saturday: 8am - 6pm</li>
+                        <li>Sunday: 9am - 5pm</li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html#residential">Residential</a></li>
-                        <li><a href="services.html#commercial">Commercial</a></li>
-                        <li><a href="services.html#appliances">Appliances</a></li>
-                        <li><a href="services.html#furniture">Furniture</a></li>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Service Areas</h4>
+                    <ul class="footer-list">
+                        <li>Downtown & Metro Area</li>
+                        <li>Suburban Communities</li>
+                        <li>Surrounding Counties</li>
+                        <li><a href="contact.html">See full coverage map</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contact Us</h4>
-                    <ul class="contact-info">
-                        <li><strong>Phone:</strong> (555) JUNK-NOW</li>
-                        <li><strong>Email:</strong> hello@quickhaul.com</li>
-                        <li><strong>Hours:</strong> Mon-Sat 7AM-7PM</li>
-                        <li><strong>Service Area:</strong> Your City & Surrounding Areas</li>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-list">
+                        <li>📞 (555) JUNK-HAUL</li>
+                        <li>📧 info@clearpathhaul.com</li>
+                        <li>📍 123 Hauler Lane<br>Your City, ST 12345</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Quick Haul Junk Removal. All rights reserved. | Licensed & Insured</p>
+                <p>&copy; 2024 ClearPath Junk Removal. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
